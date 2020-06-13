@@ -16,7 +16,7 @@ WORKDIR /opt
 # COPY ./apache-artemis-2.8.0-bin.tar.gz .
 
 RUN wget --no-check-certificate "https://repository.apache.org/content/repositories/releases/org/apache/activemq/apache-artemis/${ARTEMIS_ACTIVEMQ_VERSION}/apache-artemis-${ARTEMIS_ACTIVEMQ_VERSION}-bin.tar.gz" \
-RUN tar xfz "apache-artemis-${ARTEMIS_ACTIVEMQ_VERSION}-bin.tar.gz" \
+    && tar xfz "apache-artemis-${ARTEMIS_ACTIVEMQ_VERSION}-bin.tar.gz" \
     && ln -s "/opt/apache-artemis-${ARTEMIS_ACTIVEMQ_VERSION}" "/opt/apache-artemis" \
     && rm "apache-artemis-${ARTEMIS_ACTIVEMQ_VERSION}-bin.tar.gz"
 
