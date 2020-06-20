@@ -1,4 +1,4 @@
-# Artemi-ActiveMQ-Image
+# Artemis-ActiveMQ-Image
 This repository contains Dockerfile to create an Artemis ActiveMQ along with some performance tuning
 
 ### Getting or Building the broker instance
